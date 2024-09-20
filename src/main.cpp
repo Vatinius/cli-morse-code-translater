@@ -40,6 +40,7 @@ string translate(char character) {
         case '8': return "---..";
         case '9': return "----.";
         case '0': return "-----";
+        case ' ': return "/";
         default: return "";
     }
 }
@@ -48,7 +49,7 @@ string parser(string text) {
     string result = "";
 
     for (int i = 0; i < text.length(); i++) {
-        result += translate(text.at(i));    
+        result = result + translate(text.at(i)) + " ";    
     }
 
     return result;
