@@ -58,12 +58,12 @@ string parser(string text) {
 int main() {
     string text;
 
-    cout << "Hello! What text do you want to translate? \n\n";
+    cout << "Hello! What text do you want to translate? (/exit to exit) \n\n";
     cin >> text;
 
-    while (text != "/bye") {
+    while (text != "/exit") {
         cout << "In morse code, it is: " << parser(text) << "\n\n";
-        cout << "What else do you want to translate? \n";
+        cout << "What else do you want to translate? (/exit to exit) \n";
         cin >> text;
     }
 
